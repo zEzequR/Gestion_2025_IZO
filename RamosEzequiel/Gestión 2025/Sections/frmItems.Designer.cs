@@ -70,6 +70,7 @@
             this.AltaBtn.TabIndex = 2;
             this.AltaBtn.Text = "Alta";
             this.AltaBtn.UseVisualStyleBackColor = true;
+            this.AltaBtn.Click += new System.EventHandler(this.AltaBtn_Click);
             // 
             // BajaBtn
             // 
@@ -80,6 +81,7 @@
             this.BajaBtn.TabIndex = 3;
             this.BajaBtn.Text = "Baja";
             this.BajaBtn.UseVisualStyleBackColor = true;
+            this.BajaBtn.Click += new System.EventHandler(this.BajaBtn_Click);
             // 
             // ModBtn
             // 
@@ -90,6 +92,7 @@
             this.ModBtn.TabIndex = 4;
             this.ModBtn.Text = "Modificación";
             this.ModBtn.UseVisualStyleBackColor = true;
+            this.ModBtn.Click += new System.EventHandler(this.ModBtn_Click);
             // 
             // IdItemTxt
             // 
@@ -106,7 +109,6 @@
             this.IdInp.AcceptsTab = true;
             this.IdInp.Location = new System.Drawing.Point(345, 296);
             this.IdInp.Name = "IdInp";
-            this.IdInp.ReadOnly = true;
             this.IdInp.Size = new System.Drawing.Size(100, 20);
             this.IdInp.TabIndex = 6;
             // 
@@ -115,7 +117,6 @@
             this.descripInp.AcceptsTab = true;
             this.descripInp.Location = new System.Drawing.Point(345, 325);
             this.descripInp.Name = "descripInp";
-            this.descripInp.ReadOnly = true;
             this.descripInp.Size = new System.Drawing.Size(100, 20);
             this.descripInp.TabIndex = 8;
             // 
@@ -134,7 +135,6 @@
             this.precioInp.AcceptsTab = true;
             this.precioInp.Location = new System.Drawing.Point(345, 351);
             this.precioInp.Name = "precioInp";
-            this.precioInp.ReadOnly = true;
             this.precioInp.Size = new System.Drawing.Size(100, 20);
             this.precioInp.TabIndex = 10;
             // 
@@ -153,7 +153,6 @@
             this.stockInp.AcceptsTab = true;
             this.stockInp.Location = new System.Drawing.Point(345, 377);
             this.stockInp.Name = "stockInp";
-            this.stockInp.ReadOnly = true;
             this.stockInp.Size = new System.Drawing.Size(100, 20);
             this.stockInp.TabIndex = 12;
             // 
@@ -172,7 +171,6 @@
             this.idProvInp.AcceptsTab = true;
             this.idProvInp.Location = new System.Drawing.Point(345, 406);
             this.idProvInp.Name = "idProvInp";
-            this.idProvInp.ReadOnly = true;
             this.idProvInp.Size = new System.Drawing.Size(100, 20);
             this.idProvInp.TabIndex = 14;
             // 

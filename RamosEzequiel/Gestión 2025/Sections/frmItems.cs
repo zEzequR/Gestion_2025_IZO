@@ -1,4 +1,5 @@
-﻿using Gestión_2025.Utilities;
+﻿using Gestión_2025.Classes;
+using Gestión_2025.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,7 @@ namespace Gestión_2025
 
         private void MostrarItems(object sender, EventArgs e)
         {
+            
             List<string> Items = new List<string>();
             Items.Add("ID");
             Items.Add("Descripción");
@@ -54,6 +56,58 @@ namespace Gestión_2025
             precioInp.Text = tableItems.Rows[e.RowIndex].Cells[2].Value.ToString();
             stockInp.Text = tableItems.Rows[e.RowIndex].Cells[3].Value.ToString();
             idProvInp.Text = tableItems.Rows[e.RowIndex].Cells[4].Value.ToString();
+        }
+
+        private void AltaBtn_Click(object sender, EventArgs e)
+        {
+            Item items = new Item
+            {
+                id_items = Convert.ToInt32(IdInp.Text.Trim()),
+                descripcion = descripInp.Text.Trim(),
+                precio = Convert.ToDecimal(precioInp.Text.Trim()),
+                stock = Convert.ToDecimal(stockInp.Text.Trim()),
+                id_proveedor = Convert.ToInt32(idProvInp.Text.Trim())
+            };
+
+            List<object> parametros = new List<object>();
+            List<string> sqlParameters = new List<string>();
+            sqlParameters.Add("@id_items");
+            sqlParameters.Add("@descipcion");
+            sqlParameters.Add("@precio");
+            sqlParameters.Add("@stock");
+            sqlParameters.Add("@id_proveedor");
+            parametros.Add(items.id_items);
+            parametros.Add(items.descripcion);
+            parametros.Add(items.precio);
+            parametros.Add(items.stock);
+            parametros.Add(items.id_proveedor);
+            Procedures procedures = new Procedures();
+            procedures.AgregarDatos("spu_alta_items", sqlParameters, parametros);
+        }
+
+        private void BajaBtn_Click(object sender, EventArgs e)
+        {
+            Item items = new Item
+            {
+                id_items = Convert.ToInt32(IdInp.Text.Trim()),
+                descripcion = descripInp.Text.Trim(),
+                precio = Convert.ToDecimal(precioInp.Text.Trim()),
+                stock = Convert.ToDecimal(stockInp.Text.Trim()),
+                id_proveedor = Convert.ToInt32(idProvInp.Text.Trim())
+            };
+
+            List<object> parametros = new List<object>();
+            List<string> sqlParameters = new List<string>();
+            sqlParameters.Add("@id_item");
+            parametros.Add(items.id_items);
+            Procedures procedures = new Procedures();
+            procedures.EliminarDatos("spu_baja_items", sqlParameters, parametros);
+
+        }
+
+        private void ModBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

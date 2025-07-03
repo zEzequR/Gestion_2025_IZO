@@ -105,3 +105,18 @@ CREATE PROCEDURE spu_cambiar_prov
 @rzn_social NVARCHAR(60)
 AS
 UPDATE Proveedores SET razon_social = @rzn_social WHERE id_proveedor = @idprov
+
+CREATE PROCEDURE spu_alta_items
+@id_items INT,
+@descipcion NVARCHAR(60),
+@precio DECIMAL(18,2),
+@stock DECIMAL(18,2),
+@id_proveedor INT
+AS
+INSERT INTO items
+VALUES(@id_items, @descipcion, @precio, @stock, @id_proveedor)
+
+CREATE PROCEDURE spu_baja_items
+@id_item INT
+AS
+DELETE FROM items WHERE id_items = @id_item
