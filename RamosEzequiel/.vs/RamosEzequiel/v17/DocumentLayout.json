@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\IZO TP\\Gesti\u00F3n 2025\\Gestion_2025_IZO\\RamosEzequiel\\",
+  "WorkspaceRootPath": "C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|c:\\izo tp\\gesti\u00F3n 2025\\gestion_2025_izo\\ramosezequiel\\gesti\u00F3n 2025\\utilities\\procedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|solutionrelative:gesti\u00F3n 2025\\utilities\\procedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|C:\\IZO TP\\Gesti\u00F3n 2025\\Gestion_2025_IZO\\RamosEzequiel\\gesti\u00F3n 2025\\sections\\frmrznsocial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|c:\\users\\ezequieleitor\\source\\repos\\zezequr\\gestion_2025_izo\\ramosezequiel\\gesti\u00F3n 2025\\sections\\frmrznsocial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|solutionrelative:gesti\u00F3n 2025\\sections\\frmrznsocial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|C:\\IZO TP\\Gesti\u00F3n 2025\\Gestion_2025_IZO\\RamosEzequiel\\gesti\u00F3n 2025\\sections\\frmrznsocial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\gesti\u00F3n 2025\\utilities\\procedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|solutionrelative:gesti\u00F3n 2025\\utilities\\procedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\gesti\u00F3n 2025\\sections\\frmrznsocial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|solutionrelative:gesti\u00F3n 2025\\sections\\frmrznsocial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\gesti\u00F3n 2025\\sections\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{43A9FE0F-FBF4-455C-AE65-368E421098FB}|Gesti\u00F3n 2025\\Gesti\u00F3n 2025.csproj|solutionrelative:gesti\u00F3n 2025\\sections\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +38,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Procedures.cs",
-              "DocumentMoniker": "C:\\IZO TP\\Gesti\u00F3n 2025\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Utilities\\Procedures.cs",
+              "DocumentMoniker": "C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Utilities\\Procedures.cs",
               "RelativeDocumentMoniker": "Gesti\u00F3n 2025\\Utilities\\Procedures.cs",
-              "ToolTip": "C:\\IZO TP\\Gesti\u00F3n 2025\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Utilities\\Procedures.cs",
+              "ToolTip": "C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Utilities\\Procedures.cs",
               "RelativeToolTip": "Gesti\u00F3n 2025\\Utilities\\Procedures.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAADwvzsAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T18:40:43.336Z",
+              "WhenOpened": "2025-07-03T19:29:59.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmRznSocial.cs",
+              "DocumentMoniker": "C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs",
+              "RelativeDocumentMoniker": "Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs",
+              "ToolTip": "C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs",
+              "RelativeToolTip": "Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T19:29:15.334Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmRznSocial.cs",
-              "DocumentMoniker": "C:\\IZO TP\\Gesti\u00F3n 2025\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs",
-              "RelativeDocumentMoniker": "Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs",
-              "ToolTip": "C:\\IZO TP\\Gesti\u00F3n 2025\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs",
-              "RelativeToolTip": "Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAnwF0AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "frmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Sections\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "Gesti\u00F3n 2025\\Sections\\frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Sections\\frmPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gesti\u00F3n 2025\\Sections\\frmPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T18:35:07.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T19:27:45.575Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "frmRznSocial.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\IZO TP\\Gesti\u00F3n 2025\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs",
+              "DocumentMoniker": "C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs",
               "RelativeDocumentMoniker": "Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs",
-              "ToolTip": "C:\\IZO TP\\Gesti\u00F3n 2025\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\EZEQUIELEITOR\\source\\repos\\zEzequR\\Gestion_2025_IZO\\RamosEzequiel\\Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs [Dise\u00F1o]",
               "RelativeToolTip": "Gesti\u00F3n 2025\\Sections\\frmRznSocial.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T21:09:19.435Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-02T21:09:19.435Z"
             }
           ]
         }

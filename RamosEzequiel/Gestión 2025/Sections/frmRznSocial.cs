@@ -54,14 +54,27 @@ namespace Gestión_2025
 
         private void BajaBtn_Click(object sender, EventArgs e)
         {
+
             Proveedor proveedor = new Proveedor
             {
                 id_proveedor = Convert.ToInt32(IdInp.Text.Trim())
             };
-            SqlCommand cmd = new SqlCommand("spu_baja_prov", new Conexion().Connect());
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@id_proveedor", proveedor.id_proveedor);
-            cmd.ExecuteReader();
+            List<object> parametros = new List<object>();
+            List<string> sqlParameters = new List<string>();
+            sqlParameters.Add("@id_proveedor");
+            parametros.Add(proveedor.id_proveedor);
+            Procedures procedures = new Procedures();
+            procedures.EliminarDatos("spu_baja_prov", sqlParameters, parametros);
+
+
+            //Proveedor proveedor = new Proveedor
+            //{
+            //    id_proveedor = Convert.ToInt32(IdInp.Text.Trim())
+            //};
+            //SqlCommand cmd = new SqlCommand("spu_baja_prov", new Conexion().Connect());
+            //cmd.CommandType = CommandType.StoredProcedure;
+            //cmd.Parameters.AddWithValue("@id_proveedor", proveedor.id_proveedor);
+            //cmd.ExecuteReader();
         }
 
         private void ModBtn_Click(object sender, EventArgs e)
@@ -71,11 +84,26 @@ namespace Gestión_2025
                 id_proveedor = Convert.ToInt32(IdInp.Text.Trim()),
                 rzn_social = rznSocialInp.Text.Trim()
             };
-            SqlCommand cmd = new SqlCommand("spu_cambiar_prov", new Conexion().Connect());
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@idprov", proveedor.id_proveedor);
-            cmd.Parameters.AddWithValue("@rzn_social", proveedor.rzn_social);
-            cmd.ExecuteReader();
+            List<object> parametros = new List<object>();
+            List<string> sqlParameters = new List<string>();
+            sqlParameters.Add("@idprov");
+            sqlParameters.Add("@rzn_social");
+            parametros.Add(proveedor.id_proveedor);
+            parametros.Add(proveedor.rzn_social);
+            Procedures procedures = new Procedures();
+            procedures.ActualizarDatos("spu_cambiar_prov", sqlParameters, parametros);
+
+
+            //Proveedor proveedor = new Proveedor
+            //{
+            //    id_proveedor = Convert.ToInt32(IdInp.Text.Trim()),
+            //    rzn_social = rznSocialInp.Text.Trim()
+            //};
+            //SqlCommand cmd = new SqlCommand("spu_cambiar_prov", new Conexion().Connect());
+            //cmd.CommandType = CommandType.StoredProcedure;
+            //cmd.Parameters.AddWithValue("@idprov", proveedor.id_proveedor);
+            //cmd.Parameters.AddWithValue("@rzn_social", proveedor.rzn_social);
+            //cmd.ExecuteReader();
         }
 
         private void AltaBtn_Click(object sender, EventArgs e)
@@ -85,11 +113,27 @@ namespace Gestión_2025
                 id_proveedor = Convert.ToInt32(IdInp.Text.Trim()),
                 rzn_social = rznSocialInp.Text.Trim()
             };
-            SqlCommand cmd = new SqlCommand("spu_alta_prov", new Conexion().Connect());
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@id_proveedor", proveedor.id_proveedor);
-            cmd.Parameters.AddWithValue("@razon_social", proveedor.rzn_social);
-            cmd.ExecuteReader();
+            List<object> parametros = new List<object>();
+            List<string> sqlParameters = new List<string>();
+            sqlParameters.Add("@id_proveedor");
+            sqlParameters.Add("@razon_social");
+            parametros.Add(proveedor.id_proveedor);
+            parametros.Add(proveedor.rzn_social);
+
+            Procedures procedures = new Procedures();
+            procedures.AgregarDatos("spu_alta_prov", sqlParameters, parametros);
+
+
+            //Proveedor proveedor = new Proveedor
+            //{
+            //    id_proveedor = Convert.ToInt32(IdInp.Text.Trim()),
+            //    rzn_social = rznSocialInp.Text.Trim()
+            //};
+            //SqlCommand cmd = new SqlCommand("spu_alta_prov", new Conexion().Connect());
+            //cmd.CommandType = CommandType.StoredProcedure;
+            //cmd.Parameters.AddWithValue("@id_proveedor", proveedor.id_proveedor);
+            //cmd.Parameters.AddWithValue("@razon_social", proveedor.rzn_social);
+            //cmd.ExecuteReader();
         }
     }
 }

@@ -11,3 +11,16 @@ C:\IZO TP\Gestión 2025\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\G
 C:\IZO TP\Gestión 2025\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión_2025.frmPrincipal.resources
 C:\IZO TP\Gestión 2025\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión_2025.frmItems.resources
 C:\IZO TP\Gestión 2025\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión_2025.frmRznSocial.resources
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión 2025.csproj.AssemblyReference.cache
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión 2025.exe.config
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión_2025.frmItems.resources
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión_2025.frmPrincipal.resources
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión_2025.frmRznSocial.resources
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión_2025.Properties.Resources.resources
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión 2025.csproj.GenerateResource.cache
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión 2025.csproj.CoreCompileInputs.cache
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión 2025.exe
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión 2025.pdb
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\bin\Debug\Gestión 2025.exe.config
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\bin\Debug\Gestión 2025.exe
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\bin\Debug\Gestión 2025.pdb
