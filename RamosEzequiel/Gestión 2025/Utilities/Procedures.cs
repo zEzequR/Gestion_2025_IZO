@@ -14,9 +14,7 @@ namespace Gestión_2025.Utilities
     {
         public void MostrarDatos(string procedureName, DataGridView tableName, List<String> TitleLists)
         {
-            Conexion conexion = new Conexion();
-            conexion.Connect();
-            var da = new SqlDataAdapter(procedureName, conexion.Connect());
+            var da = new SqlDataAdapter(procedureName, new Conexion().Connect());
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
             var dt = new DataTable();
             da.Fill(dt);
@@ -58,6 +56,23 @@ namespace Gestión_2025.Utilities
                 cmd.Parameters.AddWithValue(sqlParameters[i], parametros[i]);
             }
             cmd.ExecuteNonQuery();
+        }
+
+        public bool? logincomparision(DataGridView tableusers, (string, int) userInputs, List<(string, int)> users)
+        {
+            for (int i = 0; i < tableusers.Columns[2].Index; i++)
+            {
+                users.Add((tableusers.Rows[i].Cells[1].Value.ToString(), Convert.ToInt32(tableusers.Rows[i].Cells[2].Value)));
+            }
+
+            if (users.Contains(userInputs))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

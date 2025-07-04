@@ -48,6 +48,13 @@
   <ItemGroup>
     <Compile Include="Classes\Item.cs" />
     <Compile Include="Classes\Proveedor.cs" />
+    <Compile Include="Classes\User.cs" />
+    <Compile Include="Sections\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sections\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\Conexion.cs" />
     <Compile Include="Sections\frmItems.cs">
       <SubType>Form</SubType>
@@ -72,6 +79,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Sections\frmItems.resx">
       <DependentUpon>frmItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sections\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sections\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

@@ -18,7 +18,8 @@ namespace Gestión_2025
         public frmItems()
         {
             InitializeComponent();
-            MostrarItems(null, null);
+            Procedures procedure = new Procedures();
+            procedure.MostrarDatos("spu_mostrar_items", tableItems, new List<string> { "ID", "Descripción", "Precio", "Stock", "ID (Proveedor)" });
         }
 
         //public void frmItems_Load(object sender, EventArgs e)
@@ -27,27 +28,27 @@ namespace Gestión_2025
         //    procedure.MostrarDatos("EXEC spu_mostrar_items", tableItems, new List<string> { "ID", "Descripción", "Precio", "Precio", "Stock", "ID (Proveedor)" });
         //}
 
-        private void MostrarItems(object sender, EventArgs e)
-        {
+        //private void MostrarItems(object sender, EventArgs e)
+        //{
             
-            List<string> Items = new List<string>();
-            Items.Add("ID");
-            Items.Add("Descripción");
-            Items.Add("Precio");
-            Items.Add("Stock");
-            Items.Add("ID (Proveedor)");
-            Conexion conexion = new Conexion();
-            var da = new SqlDataAdapter("EXEC spu_mostrar_items", conexion.Connect());
-            var dt = new DataTable();
-            da.Fill(dt);
-            System.Diagnostics.Debug.WriteLine(dt);
-            tableItems.DataSource = dt;
+        //    List<string> Items = new List<string>();
+        //    Items.Add("ID");
+        //    Items.Add("Descripción");
+        //    Items.Add("Precio");
+        //    Items.Add("Stock");
+        //    Items.Add("ID (Proveedor)");
+        //    Conexion conexion = new Conexion();
+        //    var da = new SqlDataAdapter("EXEC spu_mostrar_items", conexion.Connect());
+        //    var dt = new DataTable();
+        //    da.Fill(dt);
+        //    System.Diagnostics.Debug.WriteLine(dt);
+        //    tableItems.DataSource = dt;
 
-            foreach (DataGridViewColumn column in tableItems.Columns)
-            {
-                tableItems.Columns[column.Index].HeaderText = Items[column.Index];
-            }
-        }
+        //    foreach (DataGridViewColumn column in tableItems.Columns)
+        //    {
+        //        tableItems.Columns[column.Index].HeaderText = Items[column.Index];
+        //    }
+        //}
 
         private void tableItems_CellClick(object sender, DataGridViewCellEventArgs e)
         {

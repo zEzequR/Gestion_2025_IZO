@@ -120,3 +120,10 @@ CREATE PROCEDURE spu_baja_items
 @id_item INT
 AS
 DELETE FROM items WHERE id_items = @id_item
+
+
+CREATE PROCEDURE spu_mostrar_users
+AS
+SELECT * FROM Usuarios
+
+EXEC spu_mostrar_users

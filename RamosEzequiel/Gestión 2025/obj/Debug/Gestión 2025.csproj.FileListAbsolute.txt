@@ -24,3 +24,4 @@ C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gesti
 C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\bin\Debug\Gestión 2025.exe.config
 C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\bin\Debug\Gestión 2025.exe
 C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\bin\Debug\Gestión 2025.pdb
+C:\Users\EZEQUIELEITOR\source\repos\zEzequR\Gestion_2025_IZO\RamosEzequiel\Gestión 2025\obj\Debug\Gestión_2025.frmLogin.resources

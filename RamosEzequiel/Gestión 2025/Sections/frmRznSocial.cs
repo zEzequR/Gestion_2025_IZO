@@ -19,7 +19,8 @@ namespace Gestión_2025
         public frmRznSocial()
         {
             InitializeComponent();
-            MostrarProveedores(null, null);
+            Procedures procedure = new Procedures();
+            procedure.MostrarDatos("spu_mostrar_prov", tableProveedores, new List<string> { "ID", "Razón Social" });
         }
 
         //public void frmRznSocial_Load(object sender, EventArgs e)
@@ -28,23 +29,23 @@ namespace Gestión_2025
         //    procedure.MostrarDatos("EXEC spu_mostrar_prov", tableProveedores, new List<string> { "ID", "Razón Social" });
         //}
 
-        private void MostrarProveedores(object sender, EventArgs e)
-        {
-            List<string> proveedores = new List<string>();
-            proveedores.Add("ID");
-            proveedores.Add("Razón Social");
-            Conexion conexion = new Conexion();
-            var da = new SqlDataAdapter("EXEC spu_mostrar_prov", conexion.Connect());
-            var dt = new DataTable();
-            da.Fill(dt);
-            System.Diagnostics.Debug.WriteLine(dt);
-            tableProveedores.DataSource = dt;
+        //private void MostrarProveedores(object sender, EventArgs e)
+        //{
+        //    List<string> proveedores = new List<string>();
+        //    proveedores.Add("ID");
+        //    proveedores.Add("Razón Social");
+        //    Conexion conexion = new Conexion();
+        //    var da = new SqlDataAdapter("EXEC spu_mostrar_prov", conexion.Connect());
+        //    var dt = new DataTable();
+        //    da.Fill(dt);
+        //    System.Diagnostics.Debug.WriteLine(dt);
+        //    tableProveedores.DataSource = dt;
 
-            foreach (DataGridViewColumn column in tableProveedores.Columns)
-            {
-                tableProveedores.Columns[column.Index].HeaderText = proveedores[column.Index];
-            }
-        }
+        //    foreach (DataGridViewColumn column in tableProveedores.Columns)
+        //    {
+        //        tableProveedores.Columns[column.Index].HeaderText = proveedores[column.Index];
+        //    }
+        //}
 
         private void tableProveedores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
