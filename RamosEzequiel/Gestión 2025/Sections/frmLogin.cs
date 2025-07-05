@@ -18,7 +18,6 @@ namespace Gestión_2025
         public frmLogin()
         {
             InitializeComponent();
-
             //for (int i = 0; i < tableUsers.Columns[2].Index; i++)
             //{
             //    System.Diagnostics.Debug.WriteLine(tableUsers.Rows[i].Cells[2].Value.ToString());
@@ -30,9 +29,18 @@ namespace Gestión_2025
         {
             User user = new User();
             user.usuario = userInp.Text;
+            if (int.TryParse(passwrdInp.Text, out int password))
+            {
+                user.psw = password;
+            }
+            else
+            {
+                userInp.Clear();
+                passwrdInp.Clear();
+            }
 
-            user.psw = Convert.ToInt32(passwrdInp.Text);
-            var userInputs = (user.usuario, user.psw);
+
+            var userInputs = (userInp.Text, password);
             List<(string, int)> users = new List<(string, int)>();
 
             Procedures procedure = new Procedures();
@@ -46,8 +54,6 @@ namespace Gestión_2025
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                userInp.Clear();
-                passwrdInp.Clear();
             }
         }
 

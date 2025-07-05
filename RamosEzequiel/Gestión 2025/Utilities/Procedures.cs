@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gestión_2025.Classes;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -25,16 +26,41 @@ namespace Gestión_2025.Utilities
             }
         }
 
+
         public void AgregarDatos(string procedureName, List<string> sqlParameters, List<Object> parametros)
         {
-            SqlCommand cmd = new SqlCommand(procedureName, new Conexion().Connect());
-            cmd.CommandType = CommandType.StoredProcedure;
-            for (int i = 0; i < sqlParameters.Count; i++)
+            try
             {
-                cmd.Parameters.AddWithValue(sqlParameters[i], parametros[i]);
+                SqlCommand cmd = new SqlCommand(procedureName, new Conexion().Connect());
+                cmd.CommandType = CommandType.StoredProcedure;
+                for (int i = 0; i < sqlParameters.Count; i++)
+                {
+                    cmd.Parameters.AddWithValue(sqlParameters[i], parametros[i]);
+                }
+                cmd.ExecuteNonQuery();
             }
-            cmd.ExecuteNonQuery();
+            catch (SqlException ex)
+            {
+                switch (ex.Number)
+                {
+                    case 2627:
+                        MessageBox.Show("ID ya existente. Por favor, verifique los datos ingresados.", "Error de duplicado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                    case 547:
+                        MessageBox.Show("ID no encontrado, porfavor ingrese un ID existente", "Error de referencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                    default:
+                        MessageBox.Show("Ocurrió un error al agregar los datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error inesperado: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+
 
         public void EliminarDatos(string procedureName, List<string> sqlParameters, List<Object> parametros)
         {
@@ -57,6 +83,7 @@ namespace Gestión_2025.Utilities
             }
             cmd.ExecuteNonQuery();
         }
+
 
         public bool? logincomparision(DataGridView tableusers, (string, int) userInputs, List<(string, int)> users)
         {
