@@ -51,22 +51,22 @@
             this.tableItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tableItems.BackgroundColor = System.Drawing.SystemColors.Control;
             this.tableItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableItems.Location = new System.Drawing.Point(87, 11);
-            this.tableItems.Margin = new System.Windows.Forms.Padding(2);
+            this.tableItems.Location = new System.Drawing.Point(130, 17);
             this.tableItems.Name = "tableItems";
             this.tableItems.ReadOnly = true;
             this.tableItems.RowHeadersWidth = 62;
             this.tableItems.RowTemplate.Height = 28;
-            this.tableItems.Size = new System.Drawing.Size(655, 255);
+            this.tableItems.Size = new System.Drawing.Size(982, 392);
             this.tableItems.TabIndex = 1;
             this.tableItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableItems_CellClick);
             // 
             // AltaBtn
             // 
             this.AltaBtn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AltaBtn.Location = new System.Drawing.Point(207, 453);
+            this.AltaBtn.Location = new System.Drawing.Point(310, 697);
+            this.AltaBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AltaBtn.Name = "AltaBtn";
-            this.AltaBtn.Size = new System.Drawing.Size(112, 39);
+            this.AltaBtn.Size = new System.Drawing.Size(168, 60);
             this.AltaBtn.TabIndex = 2;
             this.AltaBtn.Text = "Alta";
             this.AltaBtn.UseVisualStyleBackColor = true;
@@ -75,9 +75,10 @@
             // BajaBtn
             // 
             this.BajaBtn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BajaBtn.Location = new System.Drawing.Point(341, 453);
+            this.BajaBtn.Location = new System.Drawing.Point(512, 697);
+            this.BajaBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BajaBtn.Name = "BajaBtn";
-            this.BajaBtn.Size = new System.Drawing.Size(112, 39);
+            this.BajaBtn.Size = new System.Drawing.Size(168, 60);
             this.BajaBtn.TabIndex = 3;
             this.BajaBtn.Text = "Baja";
             this.BajaBtn.UseVisualStyleBackColor = true;
@@ -86,9 +87,10 @@
             // ModBtn
             // 
             this.ModBtn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModBtn.Location = new System.Drawing.Point(478, 453);
+            this.ModBtn.Location = new System.Drawing.Point(717, 697);
+            this.ModBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ModBtn.Name = "ModBtn";
-            this.ModBtn.Size = new System.Drawing.Size(112, 39);
+            this.ModBtn.Size = new System.Drawing.Size(168, 60);
             this.ModBtn.TabIndex = 4;
             this.ModBtn.Text = "Modificación";
             this.ModBtn.UseVisualStyleBackColor = true;
@@ -98,97 +100,107 @@
             // 
             this.IdItemTxt.AutoSize = true;
             this.IdItemTxt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdItemTxt.Location = new System.Drawing.Point(308, 296);
+            this.IdItemTxt.Location = new System.Drawing.Point(462, 455);
+            this.IdItemTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.IdItemTxt.Name = "IdItemTxt";
-            this.IdItemTxt.Size = new System.Drawing.Size(31, 21);
+            this.IdItemTxt.Size = new System.Drawing.Size(44, 30);
             this.IdItemTxt.TabIndex = 5;
             this.IdItemTxt.Text = "ID:";
             // 
             // IdInp
             // 
             this.IdInp.AcceptsTab = true;
-            this.IdInp.Location = new System.Drawing.Point(345, 296);
+            this.IdInp.Location = new System.Drawing.Point(518, 455);
+            this.IdInp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.IdInp.Name = "IdInp";
-            this.IdInp.Size = new System.Drawing.Size(100, 20);
+            this.IdInp.Size = new System.Drawing.Size(148, 26);
             this.IdInp.TabIndex = 6;
             // 
             // descripInp
             // 
             this.descripInp.AcceptsTab = true;
-            this.descripInp.Location = new System.Drawing.Point(345, 325);
+            this.descripInp.Location = new System.Drawing.Point(518, 500);
+            this.descripInp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.descripInp.Name = "descripInp";
-            this.descripInp.Size = new System.Drawing.Size(100, 20);
+            this.descripInp.Size = new System.Drawing.Size(148, 26);
             this.descripInp.TabIndex = 8;
             // 
             // descripTxt
             // 
             this.descripTxt.AutoSize = true;
             this.descripTxt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descripTxt.Location = new System.Drawing.Point(235, 322);
+            this.descripTxt.Location = new System.Drawing.Point(352, 495);
+            this.descripTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.descripTxt.Name = "descripTxt";
-            this.descripTxt.Size = new System.Drawing.Size(104, 21);
+            this.descripTxt.Size = new System.Drawing.Size(162, 30);
             this.descripTxt.TabIndex = 7;
             this.descripTxt.Text = "Descripción:";
             // 
             // precioInp
             // 
             this.precioInp.AcceptsTab = true;
-            this.precioInp.Location = new System.Drawing.Point(345, 351);
+            this.precioInp.Location = new System.Drawing.Point(518, 540);
+            this.precioInp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.precioInp.Name = "precioInp";
-            this.precioInp.Size = new System.Drawing.Size(100, 20);
+            this.precioInp.Size = new System.Drawing.Size(148, 26);
             this.precioInp.TabIndex = 10;
             // 
             // precioTxt
             // 
             this.precioTxt.AutoSize = true;
             this.precioTxt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioTxt.Location = new System.Drawing.Point(279, 348);
+            this.precioTxt.Location = new System.Drawing.Point(418, 535);
+            this.precioTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.precioTxt.Name = "precioTxt";
-            this.precioTxt.Size = new System.Drawing.Size(61, 21);
+            this.precioTxt.Size = new System.Drawing.Size(95, 30);
             this.precioTxt.TabIndex = 9;
             this.precioTxt.Text = "Precio:";
             // 
             // stockInp
             // 
             this.stockInp.AcceptsTab = true;
-            this.stockInp.Location = new System.Drawing.Point(345, 377);
+            this.stockInp.Location = new System.Drawing.Point(518, 580);
+            this.stockInp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.stockInp.Name = "stockInp";
-            this.stockInp.Size = new System.Drawing.Size(100, 20);
+            this.stockInp.Size = new System.Drawing.Size(148, 26);
             this.stockInp.TabIndex = 12;
             // 
             // stockTxt
             // 
             this.stockTxt.AutoSize = true;
             this.stockTxt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockTxt.Location = new System.Drawing.Point(282, 374);
+            this.stockTxt.Location = new System.Drawing.Point(423, 575);
+            this.stockTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.stockTxt.Name = "stockTxt";
-            this.stockTxt.Size = new System.Drawing.Size(57, 21);
+            this.stockTxt.Size = new System.Drawing.Size(84, 30);
             this.stockTxt.TabIndex = 11;
             this.stockTxt.Text = "Stock:";
             // 
             // idProvInp
             // 
             this.idProvInp.AcceptsTab = true;
-            this.idProvInp.Location = new System.Drawing.Point(345, 406);
+            this.idProvInp.Location = new System.Drawing.Point(518, 625);
+            this.idProvInp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.idProvInp.Name = "idProvInp";
-            this.idProvInp.Size = new System.Drawing.Size(100, 20);
+            this.idProvInp.Size = new System.Drawing.Size(148, 26);
             this.idProvInp.TabIndex = 14;
             // 
             // IdProvTxt
             // 
             this.IdProvTxt.AutoSize = true;
             this.IdProvTxt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdProvTxt.Location = new System.Drawing.Point(214, 403);
+            this.IdProvTxt.Location = new System.Drawing.Point(321, 620);
+            this.IdProvTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.IdProvTxt.Name = "IdProvTxt";
-            this.IdProvTxt.Size = new System.Drawing.Size(127, 21);
+            this.IdProvTxt.Size = new System.Drawing.Size(191, 30);
             this.IdProvTxt.TabIndex = 13;
             this.IdProvTxt.Text = "ID (Proveedor):";
             // 
             // frmItems
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(829, 541);
+            this.ClientSize = new System.Drawing.Size(1244, 832);
             this.Controls.Add(this.idProvInp);
             this.Controls.Add(this.IdProvTxt);
             this.Controls.Add(this.stockInp);
@@ -204,10 +216,10 @@
             this.Controls.Add(this.AltaBtn);
             this.Controls.Add(this.tableItems);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmItems";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión 2025 - Ítems";
+            this.Load += new System.EventHandler(this.frmItems_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tableItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

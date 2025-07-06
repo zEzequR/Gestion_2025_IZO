@@ -110,5 +110,11 @@ namespace Gestión_2025
         {
 
         }
+
+        private void frmItems_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }
