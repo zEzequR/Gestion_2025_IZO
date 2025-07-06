@@ -219,7 +219,6 @@
             this.Name = "frmItems";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión 2025 - Ítems";
-            this.Load += new System.EventHandler(this.frmItems_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tableItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

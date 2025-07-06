@@ -87,12 +87,12 @@ namespace Gestión_2025
             };
             List<object> parametros = new List<object>();
             List<string> sqlParameters = new List<string>();
-            sqlParameters.Add("@idprov");
-            sqlParameters.Add("@rzn_social");
+            sqlParameters.Add("@id_rznsocial");
+            sqlParameters.Add("@nombre_rznsocial");
             parametros.Add(proveedor.id_proveedor);
             parametros.Add(proveedor.rzn_social);
             Procedures procedures = new Procedures();
-            procedures.ActualizarDatos("spu_cambiar_prov", sqlParameters, parametros);
+            procedures.ActualizarDatos("spu_modificar_rznsocial", sqlParameters, parametros);
 
 
             //Proveedor proveedor = new Proveedor

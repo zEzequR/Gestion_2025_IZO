@@ -127,3 +127,27 @@ AS
 SELECT * FROM Usuarios
 
 EXEC spu_mostrar_users
+
+CREATE PROCEDURE spu_modificar_items
+@id_items INT,
+@descipcion NVARCHAR(60),
+@precio DECIMAL(18,2),
+@stock DECIMAL(18,2),
+@id_proveedor INT
+AS
+UPDATE items SET descipcion = @descipcion, precio = @precio, stock = @stock, id_proveedor = @id_proveedor WHERE id_items = @id_items
+
+SELECT * FROM items
+
+EXEC spu_modificar_items 3, 'Crema de Leche', 4500.00, 20, 2
+
+
+CREATE PROCEDURE spu_modificar_rznsocial
+@id_rznsocial INT,
+@nombre_rznsocial NVARCHAR(60)
+AS
+UPDATE Proveedores SET razon_social = @nombre_rznsocial WHERE id_proveedor = @id_rznsocial
+
+SELECT * FROM Proveedores
+
+EXEC spu_modificar_rznsocial 3,'Cotar'
