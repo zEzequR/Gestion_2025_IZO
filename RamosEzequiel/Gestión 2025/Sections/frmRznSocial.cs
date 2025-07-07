@@ -56,16 +56,24 @@ namespace Gestión_2025
         private void BajaBtn_Click(object sender, EventArgs e)
         {
 
-            Proveedor proveedor = new Proveedor
+            if (!int.TryParse(IdInp.Text.Trim(), out int idprov))
             {
-                id_proveedor = Convert.ToInt32(IdInp.Text.Trim())
-            };
-            List<object> parametros = new List<object>();
-            List<string> sqlParameters = new List<string>();
-            sqlParameters.Add("@id_proveedor");
-            parametros.Add(proveedor.id_proveedor);
-            Procedures procedures = new Procedures();
-            procedures.EliminarDatos("spu_baja_prov", sqlParameters, parametros);
+                MessageBox.Show("Porfavor, ingrese los datos correctamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                Proveedor proveedor = new Proveedor
+                {
+                    id_proveedor = idprov,
+                };
+                List<object> parametros = new List<object>();
+                List<string> sqlParameters = new List<string>();
+                sqlParameters.Add("@id_proveedor");
+                parametros.Add(proveedor.id_proveedor);
+                Procedures procedures = new Procedures();
+                procedures.EliminarDatos("spu_baja_prov", sqlParameters, parametros);
+            }
 
 
             //Proveedor proveedor = new Proveedor
@@ -80,19 +88,26 @@ namespace Gestión_2025
 
         private void ModBtn_Click(object sender, EventArgs e)
         {
-            Proveedor proveedor = new Proveedor
+            if (!int.TryParse(IdInp.Text.Trim(), out int idprov))
             {
-                id_proveedor = Convert.ToInt32(IdInp.Text.Trim()),
-                rzn_social = rznSocialInp.Text.Trim()
-            };
-            List<object> parametros = new List<object>();
-            List<string> sqlParameters = new List<string>();
-            sqlParameters.Add("@id_rznsocial");
-            sqlParameters.Add("@nombre_rznsocial");
-            parametros.Add(proveedor.id_proveedor);
-            parametros.Add(proveedor.rzn_social);
-            Procedures procedures = new Procedures();
-            procedures.ActualizarDatos("spu_modificar_rznsocial", sqlParameters, parametros);
+                MessageBox.Show("Porfavor, ingrese los datos correctamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Proveedor proveedor = new Proveedor
+                {
+                    id_proveedor = Convert.ToInt32(IdInp.Text.Trim()),
+                    rzn_social = rznSocialInp.Text.Trim()
+                };
+                List<object> parametros = new List<object>();
+                List<string> sqlParameters = new List<string>();
+                sqlParameters.Add("@id_rznsocial");
+                sqlParameters.Add("@nombre_rznsocial");
+                parametros.Add(proveedor.id_proveedor);
+                parametros.Add(proveedor.rzn_social);
+                Procedures procedures = new Procedures();
+                procedures.ActualizarDatos("spu_modificar_rznsocial", sqlParameters, parametros);
+            }
 
 
             //Proveedor proveedor = new Proveedor
@@ -109,20 +124,27 @@ namespace Gestión_2025
 
         private void AltaBtn_Click(object sender, EventArgs e)
         {
-            Proveedor proveedor = new Proveedor
+            if (!int.TryParse(IdInp.Text.Trim(), out int idprov))
             {
-                id_proveedor = Convert.ToInt32(IdInp.Text.Trim()),
-                rzn_social = rznSocialInp.Text.Trim()
-            };
-            List<object> parametros = new List<object>();
-            List<string> sqlParameters = new List<string>();
-            sqlParameters.Add("@id_proveedor");
-            sqlParameters.Add("@razon_social");
-            parametros.Add(proveedor.id_proveedor);
-            parametros.Add(proveedor.rzn_social);
+                MessageBox.Show("Porfavor, ingrese los datos correctamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Proveedor proveedor = new Proveedor
+                {
+                    id_proveedor = Convert.ToInt32(IdInp.Text.Trim()),
+                    rzn_social = rznSocialInp.Text.Trim()
+                };
+                List<object> parametros = new List<object>();
+                List<string> sqlParameters = new List<string>();
+                sqlParameters.Add("@id_proveedor");
+                sqlParameters.Add("@razon_social");
+                parametros.Add(proveedor.id_proveedor);
+                parametros.Add(proveedor.rzn_social);
 
-            Procedures procedures = new Procedures();
-            procedures.AgregarDatos("spu_alta_prov", sqlParameters, parametros);
+                Procedures procedures = new Procedures();
+                procedures.AgregarDatos("spu_alta_prov", sqlParameters, parametros);
+            }
 
 
             //Proveedor proveedor = new Proveedor

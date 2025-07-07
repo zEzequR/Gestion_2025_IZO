@@ -54,6 +54,8 @@ namespace Gestión_2025
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                userInp.Clear();
+                passwrdInp.Clear();
             }
         }
 

@@ -61,75 +61,100 @@ namespace Gestión_2025
 
         private void AltaBtn_Click(object sender, EventArgs e)
         {
-            Item items = new Item
+            if (!int.TryParse(IdInp.Text.Trim(), out int iditem) || !decimal.TryParse(precioInp.Text.Trim(), out decimal precio) || !decimal.TryParse(stockInp.Text.Trim(), out decimal stock) || !int.TryParse(idProvInp.Text.Trim(), out int idproveedor))
             {
-                id_items = Convert.ToInt32(IdInp.Text.Trim()),
-                descripcion = descripInp.Text.Trim(),
-                precio = Convert.ToDecimal(precioInp.Text.Trim()),
-                stock = Convert.ToDecimal(stockInp.Text.Trim()),
-                id_proveedor = Convert.ToInt32(idProvInp.Text.Trim())
-            };
+                MessageBox.Show("Porfavor, ingrese los datos correctamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Item items = new Item
+                {
+                    id_items = iditem,
+                    descripcion = descripInp.Text.Trim(),
+                    precio = precio,
+                    stock = stock,
+                    id_proveedor = idproveedor,
+                };
 
-            List<object> parametros = new List<object>();
-            List<string> sqlParameters = new List<string>();
-            sqlParameters.Add("@id_items");
-            sqlParameters.Add("@descipcion");
-            sqlParameters.Add("@precio");
-            sqlParameters.Add("@stock");
-            sqlParameters.Add("@id_proveedor");
-            parametros.Add(items.id_items);
-            parametros.Add(items.descripcion);
-            parametros.Add(items.precio);
-            parametros.Add(items.stock);
-            parametros.Add(items.id_proveedor);
-            Procedures procedures = new Procedures();
-            procedures.AgregarDatos("spu_alta_items", sqlParameters, parametros);
+                List<object> parametros = new List<object>();
+                List<string> sqlParameters = new List<string>();
+                sqlParameters.Add("@id_items");
+                sqlParameters.Add("@descipcion");
+                sqlParameters.Add("@precio");
+                sqlParameters.Add("@stock");
+                sqlParameters.Add("@id_proveedor");
+                parametros.Add(items.id_items);
+                parametros.Add(items.descripcion);
+                parametros.Add(items.precio);
+                parametros.Add(items.stock);
+                parametros.Add(items.id_proveedor);
+                Procedures procedures = new Procedures();
+                procedures.AgregarDatos("spu_alta_items", sqlParameters, parametros);
+            }
         }
 
         private void BajaBtn_Click(object sender, EventArgs e)
         {
-            Item items = new Item
+            if (!int.TryParse(IdInp.Text.Trim(), out int iditem) || !decimal.TryParse(precioInp.Text.Trim(), out decimal precio) || !decimal.TryParse(stockInp.Text.Trim(), out decimal stock) || !int.TryParse(idProvInp.Text.Trim(), out int idproveedor))
             {
-                id_items = Convert.ToInt32(IdInp.Text.Trim()),
-                descripcion = descripInp.Text.Trim(),
-                precio = Convert.ToDecimal(precioInp.Text.Trim()),
-                stock = Convert.ToDecimal(stockInp.Text.Trim()),
-                id_proveedor = Convert.ToInt32(idProvInp.Text.Trim())
-            };
+                MessageBox.Show("Porfavor, ingrese los datos correctamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Item items = new Item
+                {
+                    id_items = iditem,
+                    descripcion = descripInp.Text.Trim(),
+                    precio = precio,
+                    stock = stock,
+                    id_proveedor = idproveedor,
+                };
 
-            List<object> parametros = new List<object>();
-            List<string> sqlParameters = new List<string>();
-            sqlParameters.Add("@id_item");
-            parametros.Add(items.id_items);
-            Procedures procedures = new Procedures();
-            procedures.EliminarDatos("spu_baja_items", sqlParameters, parametros);
+                List<object> parametros = new List<object>();
+                List<string> sqlParameters = new List<string>();
+                sqlParameters.Add("@id_item");
+                parametros.Add(items.id_items);
+                Procedures procedures = new Procedures();
+                procedures.EliminarDatos("spu_baja_items", sqlParameters, parametros);
+            }
+
+
 
         }
 
         private void ModBtn_Click(object sender, EventArgs e)
         {
-            Item item = new Item
+            if (!int.TryParse(IdInp.Text.Trim(), out int iditem) || !decimal.TryParse(precioInp.Text.Trim(), out decimal precio) || !decimal.TryParse(stockInp.Text.Trim(), out decimal stock) || !int.TryParse(idProvInp.Text.Trim(), out int idproveedor))
             {
-                id_items = Convert.ToInt32(IdInp.Text.Trim()),
-                descripcion = descripInp.Text.Trim(),
-                precio = Convert.ToDecimal(precioInp.Text.Trim()),
-                stock = Convert.ToDecimal(stockInp.Text.Trim()),
-                id_proveedor = Convert.ToInt32(idProvInp.Text.Trim())
-            };
-            List<object> parametros = new List<object>();
-            List<string> sqlParameters = new List<string>();
-            sqlParameters.Add("@id_items");
-            sqlParameters.Add("@descipcion");
-            sqlParameters.Add("@precio");
-            sqlParameters.Add("@stock");
-            sqlParameters.Add("@id_proveedor");
-            parametros.Add(item.id_items);
-            parametros.Add(item.descripcion);
-            parametros.Add(item.precio);
-            parametros.Add(item.stock);
-            parametros.Add(item.id_proveedor);
-            Procedures procedures = new Procedures();
-            procedures.ActualizarDatos("spu_modificar_items", sqlParameters, parametros);
+                MessageBox.Show("Porfavor, ingrese los datos correctamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Item item = new Item
+                {
+                    id_items = iditem,
+                    descripcion = descripInp.Text.Trim(),
+                    precio = precio,
+                    stock = stock,
+                    id_proveedor = idproveedor,
+                };
+
+                List<object> parametros = new List<object>();
+                List<string> sqlParameters = new List<string>();
+                sqlParameters.Add("@id_items");
+                sqlParameters.Add("@descipcion");
+                sqlParameters.Add("@precio");
+                sqlParameters.Add("@stock");
+                sqlParameters.Add("@id_proveedor");
+                parametros.Add(item.id_items);
+                parametros.Add(item.descripcion);
+                parametros.Add(item.precio);
+                parametros.Add(item.stock);
+                parametros.Add(item.id_proveedor);
+                Procedures procedures = new Procedures();
+                procedures.ActualizarDatos("spu_modificar_items", sqlParameters, parametros);
+            }
+
         }
 
     }

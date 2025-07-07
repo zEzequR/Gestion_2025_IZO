@@ -151,3 +151,11 @@ UPDATE Proveedores SET razon_social = @nombre_rznsocial WHERE id_proveedor = @id
 SELECT * FROM Proveedores
 
 EXEC spu_modificar_rznsocial 3,'Cotar'
+
+
+CREATE PROCEDURE spu_buscar_items
+@descripcion NVARCHAR(60)
+AS
+SELECT * FROM items WHERE descipcion = @descripcion
+
+EXEC spu_buscar_items 'Manteca'
